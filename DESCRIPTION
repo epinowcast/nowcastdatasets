@@ -1,0 +1,54 @@
+Package: nowcastdatasets
+Type: Package
+Title: Datasets for Epidemiological Nowcasting Models
+Version: 0.1.0
+Authors@R: c(
+    person("Rodrigo", "Zepeda-Tello", , "rzepeda17@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4471-5270")),
+    person("Sarah", "McGough", email = "sfm341@mail.harvard.edu", role = "ctb",
+      comment = "dengue dataset adapted from NobBS"),
+    person("Nicolas", "Menzies", email = "nmenzies@hsph.harvard.edu", role = "ctb", 
+      comment = "dengue dataset adapted from NobBS"),
+    person("Marc", "Lipsitch", email = "mlipsitc@hsph.harvard.edu", role = "ctb", 
+      comment = "dengue dataset adapted from NobBS"),
+    person("Michael", "Johansson", email = "mjohansson@cdc.gov", role = "ctb", 
+      comment = "dengue dataset adapted from NobBS"),
+    person("Rami", "Yaari", email = "ramiyaari@gmail.com", role = "ctb", 
+      comment = "dengue dataset adapted from NobBS"),
+    person("Teresa", "Yamana", email = "tky2104@climate.columbia.edu", role = c("ctb"), 
+      comment = "dengue dataset adapted from NobBS"),
+    person("Matteo", "Perini", email = "mperini@climate.columbia.edu", role = c("ctb"), 
+      comment = "dengue dataset adapted from NobBS"),
+    person("Rafael", "Lopes", , "rafael.lopes@yale.edu", role = c("ctb"), 
+      comment = c(ORCID = "0000-0002-9416-6145", note = "SARI_BH dataset adapted from nowcaster.")),
+    person("Tatiana", "Portella", , "tatiana.portella@fiocruz.br", role = c("ctb"), 
+      comment = c(ORCID = "0000-0001-8364-1978", note = "SARI_BH dataset adapted from nowcaster.")),
+    person("Marcelo", "Gomes", , "marcelo.gomes@fiocruz.br", role = c("ctb"), 
+      comment = c(ORCID = "0000-0003-4693-5402", note = "SARI_BH dataset adapted from nowcaster.")),
+    person("Leonardo", "Bastos", , "leonardo.bastos@fiocruz.br", role = c("ctb"), 
+      comment = c(ORCID = "0000-0002-1406-0122", note = "SARI_BH dataset adapted from nowcaster.")),
+    person(given = "Kaitlyn", family = "Johnson", role = c("ctb"),
+           email = "kaitlyn.johnson@lshtm.ac.uk",
+           comment = c(ORCID = "0000-0001-8011-0012", note = "Germany hospitalizations data from baselinenowcast")),
+    person(given = "Emily", family = "Tyszka", email = "etsyzka@umass.edu", role = c("ctb"),
+           comment = c(ORCID = "0009-0005-6088-4017", note = "Germany hospitalizations data from baselinenowcast")),
+    person(given = "Johannes", family = "Bracher", role = c("ctb"),
+           email = "johannes.bracher@kit.edu",
+           comment = c(ORCID = "0000-0002-3777-1410", note = "Germany hospitalizations data from baselinenowcast")),
+    person(given = "Sebastian", family = "Funk", role = c("ctb"),
+           email = "sebastian.funk@lshtm.ac.uk",
+           comment = c(ORCID = "0000-0002-2842-3406", note = "Germany hospitalizations data from baselinenowcast")),
+      person(given = "Sam", family = "Abbott", role = c("ctb"),
+           email = "contact@samabbott.co.uk", 
+           comment = c(ORCID = "0000-0001-8057-8037", note = "Germany hospitalizations data from baselinenowcast")),
+    person(given   = "Tim", family  = "Taylor", role    = "ctb", email   = "tim.taylor@hiddenelephants.co.uk",
+           comment = c(ORCID = "0000-0002-8587-7113", note = "Germany hospitalizations data from baselinenowcast"))
+  )
+Description: Includes different datasets for epidemiological nowcasting. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: bzip2
+Depends: 
+    R (>= 3.5)
+RoxygenNote: 7.3.3

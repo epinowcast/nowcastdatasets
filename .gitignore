@@ -1,0 +1,15 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+docs
+.DS_Store
+*.sh
+*.exe
+*.DS_Store
+*.o
+*.so
+logs/
+*.log
+*.rds
+*.pdf
