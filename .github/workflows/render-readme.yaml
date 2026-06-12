@@ -1,3 +1,7 @@
+#Workflow designed by Claude
+#The goal is to render the readme every time as the datasets
+#might have been updated and the Rmd doesn't detect
+#the change automatically (the dataset list comes from data(package))
 on:
   push:
     branches: [main, master]
@@ -40,6 +44,9 @@ jobs:
         run: |
           git config --local user.name  "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md man/figures/
+          git add README.md
+          if [ -d man/figures ]; then
+            git add man/figures
+          fi
           git diff --cached --quiet || git commit -m "Auto-render README.md from README.Rmd [skip ci]"
           git push
