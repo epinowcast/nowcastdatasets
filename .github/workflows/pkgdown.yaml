@@ -3,7 +3,14 @@
 on:
   push:
     branches: [main, master]
-  pull_request:
+    paths:
+      - 'R/**'
+      - 'man/**'
+      - 'vignettes/**'
+      - README.Rmd
+      - README.md
+      - _pkgdown.yml
+      - DESCRIPTION
   release:
     types: [published]
   workflow_dispatch:
@@ -23,7 +30,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
 
       - uses: r-lib/actions/setup-pandoc@v2
 
