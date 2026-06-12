@@ -30,11 +30,15 @@ data(package="nowcastdatasets")
 
 | Item | Title |
 |:---|:---|
-| SARI_BH | SARI data from Belo Horizonte (Brazil) |
-| denguedat | denguedat: Dengue fever individual-level reporting data from Puerto Rico |
-| flusight | flusight: NHSN Weekly Hospital Respiratory Data from FluSight |
-| germany_covid19_hosp | germany_covid19_hosp: Incident COVID-19 hospitalisations indexed by the date of positive test (reference date) and report date from Germany in 2021 and 2022. |
-| mpoxdat | mpoxdat: Mpox reporting data from the 2022 New York City outbreak |
+| denguedat | Dengue fever individual-level reporting data from Puerto Rico (USA) 1990-2010 |
+| ebola_sierraleone_2014 | Ebola virus disease outbreak in Sierra Leone, 2014-2015 |
+| flu_h7n9_china_2013 | Influenza A H7N9 outbreak in China, 2013 |
+| flusight | USA’s National Healthcare Safety Network (NHSN) Weekly Hospital Respiratory Data from FluSight |
+| germany_covid19_hosp | Incident COVID-19 hospitalizations indexed by the date of positive test (reference date) and report date from Germany in 2021 and 2022. |
+| measles_hagelloch_1861 | Measles outbreak in Hagelloch, (Germany) 1861 |
+| mers_korea_2015 | Middle East Respiratory Syndrome (MERS-CoV) outbreak in South Korea, 2015 |
+| mpoxdat | Mpox reporting data from the 2022 New York City (USA) outbreak |
+| sari_bh | Severe Acute Respiratory Illness data from Belo Horizonte (Brazil) |
 
 Data sets in nowcastdatasets
 
