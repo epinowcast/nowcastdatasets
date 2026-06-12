@@ -1,0 +1,45 @@
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - README.Rmd
+      - 'R/**'
+      - 'data/**'
+      - DESCRIPTION
+
+name: Render README
+
+permissions:
+  contents: write
+
+jobs:
+  render-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-pandoc@v2
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            any::knitr
+            any::rmarkdown
+            any::printr
+            local::.
+          needs: readme
+
+      - name: Render README
+        run: Rscript -e 'knitr::knit("README.Rmd", output = "README.md")'
+
+      - name: Commit and push README.md
+        run: |
+          git config --local user.name  "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md man/figures/
+          git diff --cached --quiet || git commit -m "Auto-render README.md from README.Rmd [skip ci]"
+          git push
