@@ -55,10 +55,10 @@ epidemiological data*. <https://github.com/epinowcast/baselinenowcast/>.
 ## See also
 
 Other real-data:
-[`denguedat`](http://www.epinowcast.org/nowcastdatasets/reference/denguedat.md),
-[`ebola_sierraleone_2014`](http://www.epinowcast.org/nowcastdatasets/reference/ebola_sierraleone_2014.md),
-[`flu_h7n9_china_2013`](http://www.epinowcast.org/nowcastdatasets/reference/flu_h7n9_china_2013.md),
-[`flusight`](http://www.epinowcast.org/nowcastdatasets/reference/flusight.md),
-[`measles_hagelloch_1861`](http://www.epinowcast.org/nowcastdatasets/reference/measles_hagelloch_1861.md),
-[`mers_korea_2015`](http://www.epinowcast.org/nowcastdatasets/reference/mers_korea_2015.md),
-[`mpoxdat`](http://www.epinowcast.org/nowcastdatasets/reference/mpoxdat.md)
+[`denguedat`](https://www.epinowcast.org/nowcastdatasets/reference/denguedat.md),
+[`ebola_sierraleone_2014`](https://www.epinowcast.org/nowcastdatasets/reference/ebola_sierraleone_2014.md),
+[`flu_h7n9_china_2013`](https://www.epinowcast.org/nowcastdatasets/reference/flu_h7n9_china_2013.md),
+[`flusight`](https://www.epinowcast.org/nowcastdatasets/reference/flusight.md),
+[`measles_hagelloch_1861`](https://www.epinowcast.org/nowcastdatasets/reference/measles_hagelloch_1861.md),
+[`mers_korea_2015`](https://www.epinowcast.org/nowcastdatasets/reference/mers_korea_2015.md),
+[`mpoxdat`](https://www.epinowcast.org/nowcastdatasets/reference/mpoxdat.md)

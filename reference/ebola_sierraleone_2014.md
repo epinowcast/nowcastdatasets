@@ -62,13 +62,13 @@ of the National Academy of Sciences, 113 (16) 4488-4493; DOI:
 ## See also
 
 Other real-data:
-[`denguedat`](http://www.epinowcast.org/nowcastdatasets/reference/denguedat.md),
-[`flu_h7n9_china_2013`](http://www.epinowcast.org/nowcastdatasets/reference/flu_h7n9_china_2013.md),
-[`flusight`](http://www.epinowcast.org/nowcastdatasets/reference/flusight.md),
-[`germany_covid19_hosp`](http://www.epinowcast.org/nowcastdatasets/reference/germany_covid19_hosp.md),
-[`measles_hagelloch_1861`](http://www.epinowcast.org/nowcastdatasets/reference/measles_hagelloch_1861.md),
-[`mers_korea_2015`](http://www.epinowcast.org/nowcastdatasets/reference/mers_korea_2015.md),
-[`mpoxdat`](http://www.epinowcast.org/nowcastdatasets/reference/mpoxdat.md)
+[`denguedat`](https://www.epinowcast.org/nowcastdatasets/reference/denguedat.md),
+[`flu_h7n9_china_2013`](https://www.epinowcast.org/nowcastdatasets/reference/flu_h7n9_china_2013.md),
+[`flusight`](https://www.epinowcast.org/nowcastdatasets/reference/flusight.md),
+[`germany_covid19_hosp`](https://www.epinowcast.org/nowcastdatasets/reference/germany_covid19_hosp.md),
+[`measles_hagelloch_1861`](https://www.epinowcast.org/nowcastdatasets/reference/measles_hagelloch_1861.md),
+[`mers_korea_2015`](https://www.epinowcast.org/nowcastdatasets/reference/mers_korea_2015.md),
+[`mpoxdat`](https://www.epinowcast.org/nowcastdatasets/reference/mpoxdat.md)
 
 ## Author
 

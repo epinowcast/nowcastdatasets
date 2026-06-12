@@ -46,13 +46,13 @@ Health Informatics, 2025, vol. 17, no 1, p. e56495.
 ## See also
 
 Other real-data:
-[`denguedat`](http://www.epinowcast.org/nowcastdatasets/reference/denguedat.md),
-[`ebola_sierraleone_2014`](http://www.epinowcast.org/nowcastdatasets/reference/ebola_sierraleone_2014.md),
-[`flu_h7n9_china_2013`](http://www.epinowcast.org/nowcastdatasets/reference/flu_h7n9_china_2013.md),
-[`flusight`](http://www.epinowcast.org/nowcastdatasets/reference/flusight.md),
-[`germany_covid19_hosp`](http://www.epinowcast.org/nowcastdatasets/reference/germany_covid19_hosp.md),
-[`measles_hagelloch_1861`](http://www.epinowcast.org/nowcastdatasets/reference/measles_hagelloch_1861.md),
-[`mers_korea_2015`](http://www.epinowcast.org/nowcastdatasets/reference/mers_korea_2015.md)
+[`denguedat`](https://www.epinowcast.org/nowcastdatasets/reference/denguedat.md),
+[`ebola_sierraleone_2014`](https://www.epinowcast.org/nowcastdatasets/reference/ebola_sierraleone_2014.md),
+[`flu_h7n9_china_2013`](https://www.epinowcast.org/nowcastdatasets/reference/flu_h7n9_china_2013.md),
+[`flusight`](https://www.epinowcast.org/nowcastdatasets/reference/flusight.md),
+[`germany_covid19_hosp`](https://www.epinowcast.org/nowcastdatasets/reference/germany_covid19_hosp.md),
+[`measles_hagelloch_1861`](https://www.epinowcast.org/nowcastdatasets/reference/measles_hagelloch_1861.md),
+[`mers_korea_2015`](https://www.epinowcast.org/nowcastdatasets/reference/mers_korea_2015.md)
 
 ## Examples
 

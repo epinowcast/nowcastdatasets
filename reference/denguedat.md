@@ -42,13 +42,13 @@ biology, 2020, vol. 16, no 4, p. e1007735.
 ## See also
 
 Other real-data:
-[`ebola_sierraleone_2014`](http://www.epinowcast.org/nowcastdatasets/reference/ebola_sierraleone_2014.md),
-[`flu_h7n9_china_2013`](http://www.epinowcast.org/nowcastdatasets/reference/flu_h7n9_china_2013.md),
-[`flusight`](http://www.epinowcast.org/nowcastdatasets/reference/flusight.md),
-[`germany_covid19_hosp`](http://www.epinowcast.org/nowcastdatasets/reference/germany_covid19_hosp.md),
-[`measles_hagelloch_1861`](http://www.epinowcast.org/nowcastdatasets/reference/measles_hagelloch_1861.md),
-[`mers_korea_2015`](http://www.epinowcast.org/nowcastdatasets/reference/mers_korea_2015.md),
-[`mpoxdat`](http://www.epinowcast.org/nowcastdatasets/reference/mpoxdat.md)
+[`ebola_sierraleone_2014`](https://www.epinowcast.org/nowcastdatasets/reference/ebola_sierraleone_2014.md),
+[`flu_h7n9_china_2013`](https://www.epinowcast.org/nowcastdatasets/reference/flu_h7n9_china_2013.md),
+[`flusight`](https://www.epinowcast.org/nowcastdatasets/reference/flusight.md),
+[`germany_covid19_hosp`](https://www.epinowcast.org/nowcastdatasets/reference/germany_covid19_hosp.md),
+[`measles_hagelloch_1861`](https://www.epinowcast.org/nowcastdatasets/reference/measles_hagelloch_1861.md),
+[`mers_korea_2015`](https://www.epinowcast.org/nowcastdatasets/reference/mers_korea_2015.md),
+[`mpoxdat`](https://www.epinowcast.org/nowcastdatasets/reference/mpoxdat.md)
 
 ## Examples
 

@@ -96,13 +96,13 @@ Statistical Software, 77(11), 1 - 55.
 ## See also
 
 Other real-data:
-[`denguedat`](http://www.epinowcast.org/nowcastdatasets/reference/denguedat.md),
-[`ebola_sierraleone_2014`](http://www.epinowcast.org/nowcastdatasets/reference/ebola_sierraleone_2014.md),
-[`flu_h7n9_china_2013`](http://www.epinowcast.org/nowcastdatasets/reference/flu_h7n9_china_2013.md),
-[`flusight`](http://www.epinowcast.org/nowcastdatasets/reference/flusight.md),
-[`germany_covid19_hosp`](http://www.epinowcast.org/nowcastdatasets/reference/germany_covid19_hosp.md),
-[`mers_korea_2015`](http://www.epinowcast.org/nowcastdatasets/reference/mers_korea_2015.md),
-[`mpoxdat`](http://www.epinowcast.org/nowcastdatasets/reference/mpoxdat.md)
+[`denguedat`](https://www.epinowcast.org/nowcastdatasets/reference/denguedat.md),
+[`ebola_sierraleone_2014`](https://www.epinowcast.org/nowcastdatasets/reference/ebola_sierraleone_2014.md),
+[`flu_h7n9_china_2013`](https://www.epinowcast.org/nowcastdatasets/reference/flu_h7n9_china_2013.md),
+[`flusight`](https://www.epinowcast.org/nowcastdatasets/reference/flusight.md),
+[`germany_covid19_hosp`](https://www.epinowcast.org/nowcastdatasets/reference/germany_covid19_hosp.md),
+[`mers_korea_2015`](https://www.epinowcast.org/nowcastdatasets/reference/mers_korea_2015.md),
+[`mpoxdat`](https://www.epinowcast.org/nowcastdatasets/reference/mpoxdat.md)
 
 ## Author
 
