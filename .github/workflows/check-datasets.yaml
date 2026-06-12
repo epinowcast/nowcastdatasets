@@ -1,0 +1,102 @@
+on:
+  push:
+    paths:
+      - 'data/**'
+      - 'R/**'
+      - '.github/workflows/check-datasets.yaml'
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'R/**'
+      - '.github/workflows/check-datasets.yaml'
+
+name: Check datasets
+
+jobs:
+  check-datasets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Check snake_case naming and ISO8601 dates
+        shell: Rscript {0}
+        run: |
+          # Load all datasets from data/*.rda and validate:
+          #   1. Dataset name is snake_case (lowercase, underscores, ASCII letters/digits only)
+          #   2. All column names are snake_case
+          #   3. All Date columns contain only YYYY-MM-DD values (NAs are permitted)
+
+          is_snake_case <- function(x) {
+            grepl("^[a-z][a-z0-9_]*$", x)
+          }
+
+          rda_files <- list.files("data", pattern = "\\.rda$", full.names = TRUE)
+          if (length(rda_files) == 0) stop("No .rda files found in data/")
+
+          errors <- character(0)
+
+          for (f in rda_files) {
+            env <- new.env(parent = emptyenv())
+            load(f, envir = env)
+            ds_names <- ls(env)
+
+            for (ds_name in ds_names) {
+              obj <- get(ds_name, envir = env)
+
+              # 1. Dataset name must be snake_case
+              if (!is_snake_case(ds_name)) {
+                errors <- c(errors, sprintf(
+                  "[%s] Dataset name '%s' is not snake_case (must be lowercase ASCII letters, digits, and underscores only).",
+                  f, ds_name
+                ))
+              }
+
+              if (!is.data.frame(obj)) next
+
+              # 2. Column names must be snake_case
+              bad_cols <- names(obj)[!vapply(names(obj), is_snake_case, logical(1))]
+              if (length(bad_cols) > 0) {
+                errors <- c(errors, sprintf(
+                  "[%s / %s] Column(s) not in snake_case: %s",
+                  f, ds_name, paste(bad_cols, collapse = ", ")
+                ))
+              }
+
+              # 3. Date columns must contain only YYYY-MM-DD values (NAs allowed)
+              date_cols <- names(obj)[vapply(obj, inherits, logical(1), "Date")]
+              for (col in date_cols) {
+                vals <- as.character(obj[[col]])
+                bad <- vals[!is.na(vals) & !grepl("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", vals)]
+                if (length(bad) > 0) {
+                  errors <- c(errors, sprintf(
+                    "[%s / %s] Column '%s' has %d non-ISO8601 date value(s), e.g.: %s",
+                    f, ds_name, col, length(bad),
+                    paste(head(bad, 3), collapse = ", ")
+                  ))
+                }
+              }
+
+              # 4. Warn about POSIXct date columns (should be Date per DATASETS.md)
+              posix_cols <- names(obj)[vapply(obj, function(x) {
+                any(c("POSIXct", "POSIXt") %in% class(x))
+              }, logical(1))]
+              if (length(posix_cols) > 0) {
+                errors <- c(errors, sprintf(
+                  "[%s / %s] Column(s) use POSIXct/POSIXt instead of Date: %s",
+                  f, ds_name, paste(posix_cols, collapse = ", ")
+                ))
+              }
+            }
+          }
+
+          if (length(errors) > 0) {
+            cat("Dataset validation FAILED:\n")
+            cat(paste0("  - ", errors, "\n"), sep = "")
+            quit(status = 1)
+          } else {
+            cat(sprintf("All %d dataset(s) passed validation.\n", length(rda_files)))
+          }

@@ -20,6 +20,24 @@ You can install via `pak`:
 pak::pkg_install("epinowcast/nowcastdatasets")
 ```
 
-## Contributions
+## Datasets
 
-Feel free to contribute your own data or raise an issue.
+The following datasets are currently available:
+
+``` r
+data(package="nowcastdatasets")
+```
+
+| Item | Title |
+|:---|:---|
+| SARI_BH | SARI data from Belo Horizonte (Brazil) |
+| denguedat | denguedat: Dengue fever individual-level reporting data from Puerto Rico |
+| flusight | flusight: NHSN Weekly Hospital Respiratory Data from FluSight |
+| germany_covid19_hosp | germany_covid19_hosp: Incident COVID-19 hospitalisations indexed by the date of positive test (reference date) and report date from Germany in 2021 and 2022. |
+| mpoxdat | mpoxdat: Mpox reporting data from the 2022 New York City outbreak |
+
+Data sets in nowcastdatasets
+
+## Contribute
+
+See `DATASETS.md` for more information on how to contribute a dataset.

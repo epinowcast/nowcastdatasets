@@ -42,7 +42,24 @@ Authors@R: c(
            email = "contact@samabbott.co.uk", 
            comment = c(ORCID = "0000-0001-8057-8037", note = "Germany hospitalizations data from baselinenowcast")),
     person(given   = "Tim", family  = "Taylor", role    = "ctb", email   = "tim.taylor@hiddenelephants.co.uk",
-           comment = c(ORCID = "0000-0002-8587-7113", note = "Germany hospitalizations data from baselinenowcast"))
+           comment = c(ORCID = "0000-0002-8587-7113", note = "Germany hospitalizations data from baselinenowcast")),
+    person("Thibaut", "Jombart", email = "thibaut.jombart@gmail.com", role = "ctb",
+           comment = "MERS, Ebola, and Measles datasets adapted from the outbreaks package"),
+    person("Adam", "Kucharski", role = "ctb",
+           comment = c(ORCID = "0000-0001-8814-9421",
+                       note = "flu_h7n9_china_2013 dataset; MERS and Ebola datasets via outbreaks package")),
+    person("Harriet", "Mills", role = "ctb",
+           comment = "flu_h7n9_china_2013 dataset"),
+    person("Amy", "Pinsent", role = "ctb",
+           comment = "flu_h7n9_china_2013 dataset"),
+    person("Christophe", "Fraser", role = "ctb",
+           comment = "flu_h7n9_china_2013 dataset"),
+    person("Maria", "Van Kerkhove", role = "ctb",
+           comment = "flu_h7n9_china_2013 dataset"),
+    person("Christl", "Donnelly", role = "ctb",
+           comment = "flu_h7n9_china_2013 dataset"),
+    person("Steven", "Riley", role = "ctb",
+           comment = "flu_h7n9_china_2013 dataset")
   )
 Description: Includes different datasets for epidemiological nowcasting. 
 License: MIT + file LICENSE

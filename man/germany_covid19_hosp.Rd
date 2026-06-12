@@ -3,13 +3,12 @@
 \docType{data}
 \name{germany_covid19_hosp}
 \alias{germany_covid19_hosp}
-\title{germany_covid19_hosp: Incident COVID-19 hospitalisations indexed by the date of positive test
+\title{Incident COVID-19 hospitalizations indexed by the date of positive test
 (reference date) and report date from Germany in 2021 and 2022.}
 \format{
 A \code{data.frame} with 140,630 rows and 6 columns.
 \describe{
-\item{\code{reference_date}}{Date of first positive COVID-19 test formatted
-in ISO8601 standards as YYYY-MM-DD.}
+\item{\code{reference_date}}{Date of first positive COVID-19 test.}
 \item{\code{location}}{Character string indicating the location of the case
 counts}
 \item{\code{age_group}}{Character string indicating the age group of the case
@@ -18,11 +17,8 @@ counts.}
 date and the report date}
 \item{\code{count}}{Integer indicating the number of cases indexed by reference
 and report date.}
-\item{\code{report_date}}{Date of case report, formatted in ISO8601 standards as
-YYYY-MM-DD.}
+\item{\code{report_date}}{Date of case report}
 }
-
-A data frame.
 }
 \source{
 This data comes directly from the preprocessed data in the
@@ -33,7 +29,7 @@ It contains incident case counts by age group in Germany.
 germany_covid19_hosp
 }
 \description{
-germany_covid19_hosp: Incident COVID-19 hospitalisations indexed by the date of positive test
+Incident COVID-19 hospitalizations indexed by the date of positive test
 (reference date) and report date from Germany in 2021 and 2022.
 }
 \references{
@@ -44,7 +40,11 @@ right-truncated epidemiological data}. \url{https://github.com/epinowcast/baseli
 \seealso{
 Other real-data: 
 \code{\link{denguedat}},
+\code{\link{ebola_sierraleone_2014}},
+\code{\link{flu_h7n9_china_2013}},
 \code{\link{flusight}},
+\code{\link{measles_hagelloch_1861}},
+\code{\link{mers_korea_2015}},
 \code{\link{mpoxdat}}
 }
 \concept{real-data}

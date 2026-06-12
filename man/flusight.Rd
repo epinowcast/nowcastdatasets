@@ -3,9 +3,12 @@
 \docType{data}
 \name{flusight}
 \alias{flusight}
-\title{flusight: NHSN Weekly Hospital Respiratory Data from FluSight}
+\title{USA's National Healthcare Safety Network (NHSN) Weekly Hospital Respiratory Data from FluSight}
 \format{
 A data frame.
+}
+\source{
+\url{https://github.com/cdcepi/FluSight-forecast-hub/blob/main/target-data/time-series.csv}
 }
 \usage{
 data(flusight)
@@ -22,12 +25,14 @@ Data represents how many cases were considered influenza during the week of
 \emph{target_end_date} given the information known until week \emph{as_of}. Note
 that \emph{as_of} is always one week ahead of \emph{target_end_date}.
 
-This is count data. The columns are as follows:
+This is count data. Each row represents the reported case count for a given location, target
+week, and reporting snapshot. The columns are as follows:
 \itemize{
-\item \code{as_of}: The
-\item \code{target_end_date}: The date where the case happened
-\item \code{observation}: Case counts for those dates
-\item \code{location_name}: State, district or territory
+\item \code{as_of}: The date on which the data snapshot was taken (one week after \code{target_end_date}),
+formatted in ISO8601 as YYYY-MM-DD.
+\item \code{target_end_date}: The Saturday ending the surveillance week, formatted in ISO8601 as YYYY-MM-DD.
+\item \code{observation}: Case counts for that target week as of \code{as_of}.
+\item \code{location_name}: Name of the US state, district, or territory.
 }
 }
 \examples{
@@ -40,7 +45,11 @@ Target data from Flusight. Online:
 \seealso{
 Other real-data: 
 \code{\link{denguedat}},
+\code{\link{ebola_sierraleone_2014}},
+\code{\link{flu_h7n9_china_2013}},
 \code{\link{germany_covid19_hosp}},
+\code{\link{measles_hagelloch_1861}},
+\code{\link{mers_korea_2015}},
 \code{\link{mpoxdat}}
 }
 \concept{real-data}

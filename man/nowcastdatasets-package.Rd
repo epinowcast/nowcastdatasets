@@ -30,6 +30,14 @@ Other contributors:
   \item Sebastian Funk \email{sebastian.funk@lshtm.ac.uk} (\href{https://orcid.org/0000-0002-2842-3406}{ORCID}) (Germany hospitalizations data from baselinenowcast) [contributor]
   \item Sam Abbott \email{contact@samabbott.co.uk} (\href{https://orcid.org/0000-0001-8057-8037}{ORCID}) (Germany hospitalizations data from baselinenowcast) [contributor]
   \item Tim Taylor \email{tim.taylor@hiddenelephants.co.uk} (\href{https://orcid.org/0000-0002-8587-7113}{ORCID}) (Germany hospitalizations data from baselinenowcast) [contributor]
+  \item Thibaut Jombart \email{thibaut.jombart@gmail.com} (MERS, Ebola, and Measles datasets adapted from the outbreaks package) [contributor]
+  \item Adam Kucharski (\href{https://orcid.org/0000-0001-8814-9421}{ORCID}) (flu_h7n9_china_2013 dataset; MERS and Ebola datasets via outbreaks package) [contributor]
+  \item Harriet Mills (flu_h7n9_china_2013 dataset) [contributor]
+  \item Amy Pinsent (flu_h7n9_china_2013 dataset) [contributor]
+  \item Christophe Fraser (flu_h7n9_china_2013 dataset) [contributor]
+  \item Maria Van Kerkhove (flu_h7n9_china_2013 dataset) [contributor]
+  \item Christl Donnelly (flu_h7n9_china_2013 dataset) [contributor]
+  \item Steven Riley (flu_h7n9_china_2013 dataset) [contributor]
 }
 
 }

@@ -2,12 +2,13 @@
 germany_covid19_hosp <- baselinenowcast::germany_covid19_hosp
 usethis::use_data(germany_covid19_hosp, overwrite = TRUE)
 
-#Dengue
+#Dengue------
 denguedat <- NobBS::denguedat |>
   select(-gender)
 usethis::use_data(denguedat, overwrite = TRUE)
 
 #Mpox-----
+#DO NOT ADD RACE AS THE DOCUMENTATION SAYS ITS MADE UP
 library(lubridate)
 library(dplyr, quietly = TRUE)
 library(readr)
@@ -32,8 +33,8 @@ url <- "https://github.com/covid19br/nowcaster/raw/refs/heads/main/data/sragBH.r
 tmp <- tempfile(fileext = ".rda")
 download.file(url, tmp, mode = "wb")
 load(tmp)
-SARI_BH <- sragBH |>
-  rename(sympton_onset_date = DT_SIN_PRI) |>
+sari_bh <- sragBH |>
+  rename(symptom_onset_date = DT_SIN_PRI) |>
   rename(record_date = DT_DIGITA) |>
   rename(final_classification = CLASSI_FIN) |>
   rename(case_evolution = EVOLUCAO) |>
@@ -57,5 +58,6 @@ SARI_BH <- sragBH |>
   select(-municipality_code) |>
   select(-age_category)
 
-usethis::use_data(SARI_BH, overwrite = TRUE)
+usethis::use_data(sari_bh, overwrite = TRUE)
 
+#https://datadryad.org/downloads/file_stream/57907

@@ -30,6 +30,20 @@ You can install via `pak`:
 pak::pkg_install("epinowcast/nowcastdatasets")
 ```
 
-## Contributions
+## Datasets
 
-Feel free to contribute your own data or raise an issue. 
+The following datasets are currently available:
+
+```{r hidden, echo=FALSE, message=FALSE, results='hide'}
+if(!require(printr)) warning("printr is not installed; displaying the content of 'data(...)' may not work")
+```
+
+```{r datalist}
+data(package="nowcastdatasets")
+```
+
+
+## Contribute
+
+See `DATASETS.md` for more information on how to contribute a dataset.
+

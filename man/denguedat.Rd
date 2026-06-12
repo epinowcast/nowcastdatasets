@@ -3,9 +3,13 @@
 \docType{data}
 \name{denguedat}
 \alias{denguedat}
-\title{denguedat: Dengue fever individual-level reporting data from Puerto Rico}
+\title{Dengue fever individual-level reporting data from Puerto Rico (USA) 1990-2010}
 \format{
 A data frame.
+}
+\source{
+Data originally from the \code{NobBS} R package.
+\url{https://cran.r-project.org/package=NobBS}
 }
 \usage{
 data(denguedat)
@@ -17,14 +21,13 @@ Surveillance data from CDC Division of Vector-Borne Diseases.
 \details{
 Each row represents a case with the columns indicating the following:
 \itemize{
-\item \code{onset_week}:  the week of symptom onset.
-\item \code{report_week}: the week of case report.
+\item \code{onset_week}: the first day of the week of symptom onset, formatted in ISO8601 as YYYY-MM-DD.
+\item \code{report_week}: the first day of the week of case report, formatted in ISO8601 as YYYY-MM-DD.
 }
 }
 \note{
-Data originally from the \code{NobBS} package. While \code{onset_week} and \code{report_week}.
-The package contained a synthetic gender column which was removed here
-to keep just the real data.
+Data originally from the \code{NobBS} package. A synthetic gender column was removed to
+retain only the real surveillance data.
 }
 \examples{
 data(denguedat)
@@ -35,8 +38,12 @@ real-time epidemic tracking. PLoS computational biology, 2020, vol. 16, no 4, p.
 }
 \seealso{
 Other real-data: 
+\code{\link{ebola_sierraleone_2014}},
+\code{\link{flu_h7n9_china_2013}},
 \code{\link{flusight}},
 \code{\link{germany_covid19_hosp}},
+\code{\link{measles_hagelloch_1861}},
+\code{\link{mers_korea_2015}},
 \code{\link{mpoxdat}}
 }
 \concept{real-data}

@@ -1,10 +1,9 @@
-#' germany_covid19_hosp: Incident COVID-19 hospitalisations indexed by the date of positive test
-#'   (reference date) and report date from Germany in 2021 and 2022.
+#' Incident COVID-19 hospitalizations indexed by the date of positive test
+#' (reference date) and report date from Germany in 2021 and 2022.
 #'
 #' @format A `data.frame` with 140,630 rows and 6 columns.
 #' \describe{
-#'   \item{`reference_date`}{Date of first positive COVID-19 test formatted
-#'    in ISO8601 standards as YYYY-MM-DD.}
+#'   \item{`reference_date`}{Date of first positive COVID-19 test.}
 #'   \item{`location`}{Character string indicating the location of the case
 #'   counts}
 #'   \item{`age_group`}{Character string indicating the age group of the case
@@ -13,8 +12,7 @@
 #'   date and the report date}
 #'   \item{`count`}{Integer indicating the number of cases indexed by reference
 #'   and report date.}
-#'   \item{`report_date`}{Date of case report, formatted in ISO8601 standards as
-#'    YYYY-MM-DD.}
+#'   \item{`report_date`}{Date of case report}
 #' }
 #'
 #' @source This data comes directly from the preprocessed data in the
@@ -24,8 +22,6 @@
 #' @family real-data
 #'
 #' @keywords covid
-#'
-#' @format A data frame.
 #'
 #' @references  Johnson KE, Tyszka E, Bracher J, Funk S, Abbott S (2025).
 #' _baselinenowcast: Methods for baseline nowcasting
