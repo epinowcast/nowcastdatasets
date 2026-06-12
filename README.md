@@ -44,4 +44,6 @@ Data sets in nowcastdatasets
 
 ## Contribute
 
-See `DATASETS.md` for more information on how to contribute a dataset.
+See
+[`DATASETS.md`](https://github.com/epinowcast/nowcastdatasets/blob/main/DATASETS.md)
+for more information on how to contribute a dataset.

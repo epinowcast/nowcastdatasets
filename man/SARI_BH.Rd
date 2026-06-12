@@ -3,7 +3,7 @@
 \docType{data}
 \name{sari_bh}
 \alias{sari_bh}
-\title{Severe Acute Respiratory Illness data from Belo Horizonte (Brazil)}
+\title{Severe Acute Respiratory Illness data from Belo Horizonte (Brazil), 2020-2022}
 \format{
 A data frame with 65404 rows and 5 variables:
 \describe{

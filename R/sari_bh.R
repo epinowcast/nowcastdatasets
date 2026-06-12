@@ -1,4 +1,4 @@
-#' Severe Acute Respiratory Illness data from Belo Horizonte (Brazil)
+#' Severe Acute Respiratory Illness data from Belo Horizonte (Brazil), 2020-2022
 #'
 #' An anonymized dataset containing cases of Severe Acute Respiratory Illness
 #' (SARI) cases from the Brazilian municipality, Belo Horizonte, with symptom onset

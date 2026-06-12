@@ -1,4 +1,5 @@
-#' USA's National Healthcare Safety Network (NHSN) Weekly Hospital Respiratory Data from FluSight
+#' USA's National Healthcare Safety Network (NHSN) Weekly Hospital Respiratory
+#' Data from FluSight, 2022 -- 2026
 #'
 #' FluSight's weekly hospital admission prediction targets
 #' based on the 'total number of new hospital admissions of patients with confirmed

@@ -3,7 +3,8 @@
 \docType{data}
 \name{flusight}
 \alias{flusight}
-\title{USA's National Healthcare Safety Network (NHSN) Weekly Hospital Respiratory Data from FluSight}
+\title{USA's National Healthcare Safety Network (NHSN) Weekly Hospital Respiratory
+Data from FluSight, 2022 -- 2026}
 \format{
 A data frame.
 }
